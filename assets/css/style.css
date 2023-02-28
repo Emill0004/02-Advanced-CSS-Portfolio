@@ -1,0 +1,26 @@
+:root {
+    --brown: #876943;
+}
+
+* {
+    background-color: lightgray;
+    color: black;
+    font-size: 16px;
+}
+
+header {
+    position: relative;
+    background-color: var(--brown);
+    color: lightgrey;
+    height: 100px;
+}
+
+header h1 {
+    position: relative;
+    justify-content: center;
+    color: lightgray;
+    background-color: var(--brown);
+    display: inline-block;
+    font-size: 50px;
+    padding-left: 30px;
+}
