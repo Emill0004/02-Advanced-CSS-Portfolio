@@ -48,7 +48,7 @@ nav, ul, li, a {
     font-size: 25px;
 }
 
-section {
+#abtme {
     margin-top: 50px;
     padding-bottom: 20px;
     padding-left: 15px;
@@ -57,12 +57,73 @@ section {
     
 }
 
-section h4 {
+#abtme h4 {
     background-color: var(--grey);
     text-decoration: var(--brown) underline;
     padding-top: 20px;
 }
 
-section p {
+#abtme p {
     background-color: var(--grey);
+}
+
+.title {
+    position: relative;
+    background-color: var(--brown);
+    height: 80px;
+    margin-top: 50px;
+}
+
+.title h2 {
+    position: absolute;
+    top: -12px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--grey)
+}
+.workbox {
+    display: flex;
+    
+}
+
+.workbox p {
+    background-color: var(--grey);
+    width: 45%;
+    padding: 20px;
+}
+
+.workbox img {
+    object-fit: cover;
+    width: 45%;
+    height: 58%;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
+.deepdive {
+    display: flex;
+    
+}
+
+.deepdive p {
+    background-color: var(--grey);
+    width: 50%;
+    padding: 20px;
+}
+
+.deepdive img {
+    object-fit: cover;
+    width: 50%;
+    height: 58%;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
