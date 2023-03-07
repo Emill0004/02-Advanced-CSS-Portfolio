@@ -40,7 +40,7 @@ header {
     justify-content: space-between;
 }
 
-nav, ul, li, a {
+nav, ul, li, .navlink {
     display: inline;
     background-color: var(--brown);
     color: var(--lgrey);
@@ -55,6 +55,12 @@ nav, ul, li, a {
     padding-right: 15px;
     background-color: var(--grey);
     
+}
+
+#abtme img {
+    display: inline;
+    height: 8%;
+    width: 8%;
 }
 
 #abtme h4 {
@@ -82,25 +88,30 @@ nav, ul, li, a {
 .work {
     display: flex;
     flex-direction: row;
-    background-color: var(--grey)
 }
 .workbox {
     display: flex;
-    
+    background-color: var(--grey);
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+#nomargin {
+    margin-right: 0px;
 }
 
 .workbox p {
+    display: inline-block;
     background-color: var(--grey);
-    width: 45%;
+    width: 50%;
     padding: 20px;
 }
 
 .workbox img {
     object-fit: cover;
-    width: 45%;
-    height: 58%;
-    margin-top: 16px;
-    margin-left: 12px;
+    width: 100%;
+    height: 100%;
 }
 
 .deepdive {
@@ -117,19 +128,35 @@ nav, ul, li, a {
 .deepdive img {
     object-fit: cover;
     width: 50%;
-    height: 58%;
-    margin-top: 16px;
-    margin-left: 12px;
+    height: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#contactinfo {
+    text-align: center;
+    background-color: var(--brown);
 }
 
 .contactinfo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: var(--brown);
 }
 
-.contactinfo h4 a {
-    background-color:rgb(238, 238, 238);
-    color: black;
+.contactinfo h4 {
+    background-color: var(--brown);
+    color: var(--lgrey)
+}
+
+.contactinfo h4 a, u {
+    background-color:var(--brown);
+    color: var(--lgrey);
     font-size: 30px;
 }
+
+/* .contactinfo h4 u {
+    background-color: var(--brown);
+    font
+} */
