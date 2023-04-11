@@ -31,6 +31,8 @@ h3 {
 
 h4 {
     font-size: 30px;
+    background-color: var(--grey);
+    text-decoration: var(--brown) underline;
 }
 
 header {
@@ -58,9 +60,10 @@ nav, ul, li, .navlink {
 }
 
 #abtme img {
-    display: inline;
-    height: 8%;
-    width: 8%;
+    height: 5%;
+    width: 5%;
+    margin-right: 20px;
+    margin-top: 11px;
 }
 
 #abtme h4 {
@@ -85,55 +88,30 @@ nav, ul, li, .navlink {
     top: -12px;
 }
 
-.work {
-    display: flex;
-    flex-direction: row;
-}
-.workbox {
-    display: flex;
-    background-color: var(--grey);
-    align-items: center;
-    margin-right: 15px;
-    margin-top: 15px;
-}
-
-#nomargin {
-    margin-right: 0px;
-}
-
-.workbox p {
+.topRow {
+    width: 49%;
     display: inline-block;
-    background-color: var(--grey);
-    width: 50%;
-    padding: 20px;
+    vertical-align: top;
 }
 
-.workbox img {
-    object-fit: cover;
+.topimg {
     width: 100%;
-    height: 100%;
 }
 
-.deepdive {
+.bottomRow {
     display: flex;
-    
+    flex-flow: wrap;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.deepdive p {
-    background-color: var(--grey);
-    width: 50%;
-    padding: 20px;
-}
-
-.deepdive img {
-    object-fit: cover;
-    width: 50%;
-    height: 50%;
-    margin-top: 15px;
-    margin-left: 10px;
+.bottomimg {
+    width: 100%
 }
 
 #contactinfo {
+    display: block;
     text-align: center;
     background-color: var(--brown);
 }
@@ -156,7 +134,12 @@ nav, ul, li, .navlink {
     font-size: 30px;
 }
 
-/* .contactinfo h4 u {
-    background-color: var(--brown);
-    font
-} */
+@media screen and (max-width: 1000px) {
+    .topRow {
+        width: 100%;
+    }
+
+    .bottomRow {
+        width: 100%
+    }
+}
